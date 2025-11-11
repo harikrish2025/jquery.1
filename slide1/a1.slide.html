@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="/ulib/ujquery.js"> </script>
+
+
+    <script>
+       $(document).ready(
+            function() {
+              $("#dv1").click(
+
+                     function() {
+                        $("#dv2").slideToggle();
+                    }
+               );
+            }
+        );
+    </script>
+
+    <style>
+        #dv1{
+            border: 1px solid;
+            width: 400px;
+            text-align: center;
+            padding: 3%;   
+            background-color: darkgray;
+            font-weight: bold;
+            margin-left: 30%;
+        }
+         #dv2{
+            border: 1px solid;
+            width: 400px;
+            text-align: center;
+            padding: 3%;   
+            background-color: darkgray;
+            padding-bottom: 20%;
+            font-weight: bold;
+            margin-left: 30%;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+   <div id="dv1">
+        WELCOME TO MY PAGE:
+    </div>
+
+    <div id="dv2" style="display: none;">
+        THANKS...!
+    </div>
+</body>
